@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #141414;
+}
+
+.inner-main {
+    padding: 10px;
+}
+
+.container {
+    padding: 25px;
+    text-align: center;
+}
+
+.inner-box {
+    background-color: #1F1F1F;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.inner-box .inner-title {
+    padding: 30px;
+}
+
+.inner-box .inner-title .inner-image-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70px;
+    margin: 0 auto;
+}
+
+.inner-box .inner-title .inner-image-avatar img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.inner-box .inner-title h3 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.inner-box .inner-title h6 {
+    color: hsl(75, 94%, 57%);
+    margin-top: 10px;
+}
+
+.inner-box .inner-title p {
+    color: #DCDCDC;
+    font-size: 13px;
+}
+
+.inner-box .inner-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+}
+
+.inner-box .inner-social-link .btn {
+    padding: 14px 0;
+    width: 100%;
+    background-color: #333333;
+    color: #fff;
+    border-radius: 10px;
+    max-width: 300px;
+    display: block;
+    border: none;
+    font-size: 12px;
+}
+
+.inner-box .inner-social-link .btn:hover {
+    cursor: pointer;
+    color: #141414;
+    background-color: hsl(75, 94%, 57%);
+}
+
+/* Media Queries */
+@media screen and (max-width: 375px) {
+    body {
+        font-family: "Inter", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #141414;
+    }
+    .inner-box {
+        padding: 16px;
+        background-color: #333; /* Thêm màu nền để kiểm tra */
+    }
+    .inner-box .inner-title {
+        padding: 14px;
+        font-size: 12px; /* Thêm thuộc tính font-size */
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1024px) {
+    .inner-box {
+        padding: 20px;
+        background-color: #444; /* Thêm màu nền khác để kiểm tra */
+    }
+    .inner-box .inner-title {
+        padding: 20px;
+        font-size: 14px; /* Điều chỉnh kích thước font */
+    }
+}
